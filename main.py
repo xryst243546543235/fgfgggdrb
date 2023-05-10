@@ -11,6 +11,8 @@ app = Flask(__name__)
 def add_post():
     if request.method == "POST":
         print(request.form['password'])
+        a=request.form['password']
+        return render_template('ttt.html',a=a)
     return render_template('ttt.html')
 
 if __name__ == '__main__':
